@@ -1,0 +1,89 @@
+@startuml Tp_franciscoescurra
+abstract class Producto {
+    -String fechaCaducidad
+    -String numeroLote
+    +Producto(String fechaCaducidad, String numeroLote)
+    +String getFechaCaducidad()
+    +void setFechaCaducidad(String fechaCaducidad)
+    +String getNumeroLote()
+    +void setNumeroLote(String numeroLote)
+    +abstract void mostrarInformacion()
+}
+
+abstract class ProductoEnvasado extends Producto {
+    -String fechaEnvasado
+    -String paisOrigen
+    +ProductoEnvasado(String fechaCaducidad, String numeroLote, String fechaEnvasado, String paisOrigen)
+    +String getFechaEnvasado()
+    +void setFechaEnvasado(String fechaEnvasado)
+    +String getPaisOrigen()
+    +void setPaisOrigen(String paisOrigen)
+    +abstract void mostrarInformacion()
+}
+
+abstract class ProductoCongelado extends ProductoEnvasado {
+    -double temperaturaMantenimientoRecomendada
+    +ProductoCongelado(String fechaCaducidad, String numeroLote, String fechaEnvasado, String paisOrigen, double temperaturaMantenimientoRecomendada)
+    +double getTemperaturaMantenimientoRecomendada()
+    +void setTemperaturaMantenimientoRecomendada(double temperaturaMantenimientoRecomendada)
+    +abstract void mostrarInformacion()
+}
+
+class ProductoCongeladoAire extends ProductoCongelado {
+    -double porcentajeNitrogeno
+    -double porcentajeOxigeno
+    -double porcentajeDioxidoCarbono
+    -double porcentajeVaporAgua
+    +ProductoCongeladoAire(String fechaCaducidad, String numeroLote, String fechaEnvasado, String paisOrigen, double temperaturaMantenimientoRecomendada, double porcentajeNitrogeno, double porcentajeOxigeno, double porcentajeDioxidoCarbono, double porcentajeVaporAgua)
+    +double getporcentajeNitrogeno()
+    +void setporcentajeNitrogeno(double porcentajeNitrogeno)
+    +double getPorcentajeOxigeno()
+    +void setPorcentajeOxigeno(double porcentajeOxigeno)
+    +double getPorcentajeDioxidoCarbono()
+    +void setPorcentajeDioxidoCarbono(double porcentajeDioxidoCarbono)
+    +double getPorcentajeVaporAgua()
+    +void setPorcentajeVaporAgua(double porcentajeVaporAgua)
+    +void mostrarInformacion()
+}
+
+class ProductoCongeladoAgua extends ProductoCongelado {
+    -double salinidadAgua
+    +ProductoCongeladoAgua(String fechaCaducidad, String numeroLote, String fechaEnvasado, String paisOrigen, double temperaturaMantenimientoRecomendada, double salinidadAgua)
+    +double getSalinidadAgua()
+    +void setSalinidadAgua(double salinidadAgua)
+    +void mostrarInformacion()
+}
+
+class ProductoCongeladoNitrogeno extends ProductoCongelado {
+    -String metodoCongelacion
+    -double tiempoExposicionNitrogeno
+    +ProductoCongeladoNitrogeno(String fechaCaducidad, String numeroLote, String fechaEnvasado, String paisOrigen, double temperaturaMantenimientoRecomendada, String metodoCongelacion, double tiempoExposicionNitrogeno)
+    +String getMetodoCongelacion()
+    +void setMetodoCongelacion(String metodoCongelacion)
+    +double gettiempoExposicionNitrogeno()
+    +void settiempoExposicionNitrogeno(double tiempoExposicionNitrogeno)
+    +void mostrarInformacion()
+}
+
+class ProductoFresco extends ProductoEnvasado {
+    -String paisOrigen
+    -String fechaEnvasado
+    +ProductoFresco(String fechaCaducidad, String numeroLote, String fechaEnvasado, String paisOrigen)
+    +String getPaisOrigen()
+    +void setPaisOrigen(String paisOrigen)
+    +String getFechaEnvasado()
+    +void setFechaEnvasado(String fechaEnvasado)
+    +void mostrarInformacion()
+}
+
+class ProductoRefrigerado extends ProductoEnvasado {
+    -String codigoOrganismoSupervision
+    -Double temperaturaMantenimientoRecomendada
+    +ProductoRefrigerado(String fechaCaducidad, String numeroLote, String fechaEnvasado, String paisOrigen, String codigoOrganismoSupervision, Double temperaturaMantenimientoRecomendada)
+    +String getCodigoOrganismoSupervision()
+    +void setCodigoOrganismoSupervision(String codigoOrganismoSupervision)
+    +Double getTemperaturaMantenimientoRecomendada()
+    +void setTemperaturaMantenimientoRecomendada(Double temperaturaMantenimientoRecomendada)
+    +void mostrarInformacion()
+}
+@enduml
