@@ -5,13 +5,13 @@ congelación empleado y del tiempo de exposición al nitrógeno expresada en
 segundos.*/
 public class ProductoCongeladoNitrogeno extends ProductoCongelado {
     private String metodoCongelacion;
-    private double tiempoExposicionNitrógeno;
+    private double tiempoExposicionNitrogeno;
 
     public ProductoCongeladoNitrogeno(String fechaCaducidad, String numeroLote, String fechaEnvasado, String paisOrigen,
-            double temperaturaMantenimientoRecomendada, String metodoCongelacion, double tiempoExposicionNitrógeno) {
+            double temperaturaMantenimientoRecomendada, String metodoCongelacion, double tiempoExposicionNitrogeno) {
         super(fechaCaducidad, numeroLote, fechaEnvasado, paisOrigen, temperaturaMantenimientoRecomendada);
         this.metodoCongelacion = metodoCongelacion;
-        this.tiempoExposicionNitrógeno = tiempoExposicionNitrógeno;
+        this.tiempoExposicionNitrogeno = tiempoExposicionNitrogeno;
     }
 
     public String getMetodoCongelacion() {
@@ -22,12 +22,12 @@ public class ProductoCongeladoNitrogeno extends ProductoCongelado {
         this.metodoCongelacion = metodoCongelacion;
     }
 
-    public double getTiempoExposicionNitrógeno() {
-        return tiempoExposicionNitrógeno;
+    public double gettiempoExposicionNitrogeno() {
+        return tiempoExposicionNitrogeno;
     }
 
-    public void setTiempoExposicionNitrógeno(double tiempoExposicionNitrógeno) {
-        this.tiempoExposicionNitrógeno = tiempoExposicionNitrógeno;
+    public void settiempoExposicionNitrogeno(double tiempoExposicionNitrogeno) {
+        this.tiempoExposicionNitrogeno = tiempoExposicionNitrogeno;
     }
 
     public void mostrarInformacion() {
@@ -38,7 +38,7 @@ public class ProductoCongeladoNitrogeno extends ProductoCongelado {
         System.out.println("Pais de origen: " + getPaisOrigen());
         System.out.println("Temperatura de mantenimiento recomendada: " + getTemperaturaMantenimientoRecomendada());
         System.out.println("Metodo de congelacion: " + getMetodoCongelacion());
-        System.out.println("Tiempo de exposicion al nitrógeno: " + getTiempoExposicionNitrógeno());
+        System.out.println("Tiempo de exposicion al nitrógeno: " + gettiempoExposicionNitrogeno());
     }
 
 }
