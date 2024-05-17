@@ -1,5 +1,6 @@
 package trabajo2;
 
+//Francisco Escurra 5920140 11/05/2024
 /*Los productos congelados por agua deben llevar la información de la salinidad del
 agua con que se realizó la congelación en gramos de sal por litro de agua. */
 public class ProductoCongeladoAgua extends ProductoCongelado {

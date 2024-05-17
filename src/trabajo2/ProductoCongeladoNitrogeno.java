@@ -1,5 +1,6 @@
 package trabajo2;
 
+//Francisco Escurra 5920140 11/05/2024
 /*Los productos congelados por nitrógeno deben llevar la información del método de
 congelación empleado y del tiempo de exposición al nitrógeno expresada en
 segundos.*/

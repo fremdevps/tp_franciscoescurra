@@ -1,5 +1,6 @@
 package trabajo1;
 
+//Francisco Escurra 5920140 11/05/2024
 import java.util.ArrayList;
 import java.util.Scanner;
 

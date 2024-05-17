@@ -1,5 +1,6 @@
 package trabajo2;
 
+//Francisco Escurra 5920140 11/05/2024
 /*Los productos frescos deben llevar la fecha de envasado y el país de origen.  */
 public class ProductoFresco extends ProductoEnvasado {
 	private String paisOrigen;

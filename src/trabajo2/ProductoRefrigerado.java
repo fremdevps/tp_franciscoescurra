@@ -1,5 +1,6 @@
 package trabajo2;
 
+//Francisco Escurra 5920140 11/05/2024
 /*Los productos refrigerados deben llevar el código del organismo de supervisión
 alimentaria, la fecha de envasado, la temperatura de mantenimiento recomendada
 y el país de origen.  */

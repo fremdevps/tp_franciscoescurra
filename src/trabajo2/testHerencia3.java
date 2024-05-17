@@ -1,5 +1,6 @@
 package trabajo2;
 
+//Francisco Escurra 5920140 11/05/2024
 /*Crear una clase testHerencia3 con el método main donde se creen: dos productos frescos,
 tres productos refrigerados y cinco productos congelados (2 de ellos congelados por agua,
 otros 2 por aire y 1 por nitrógeno). Mostrar la información de cada producto por pantalla.

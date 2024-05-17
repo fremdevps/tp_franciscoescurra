@@ -1,5 +1,6 @@
 package trabajo2;
 
+//Francisco Escurra 5920140 11/05/2024
 /*Los productos congelados por aire deben llevar la información de la composición
 del aire con que fue congelado (% de Nitrogeno, % de oxígeno, % de dióxido de
 carbono y % de vapor de agua).*/

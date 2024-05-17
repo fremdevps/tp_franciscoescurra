@@ -1,5 +1,6 @@
 package trabajo2;
 
+//Francisco Escurra 5920140 11/05/2024
 public abstract class ProductoEnvasado extends Producto {
 	private String fechaEnvasado;
 	private String paisOrigen;

@@ -1,5 +1,7 @@
 package trabajo2;
 
+//Francisco Escurra 5920140 11/05/2024
+//Francisco Escurra 5920140
 public abstract class Producto {
     private String fechaCaducidad;
     private String numeroLote;
